@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:300');
+#wrapper {
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    ". . ."
+    ".  cta  ."
+    "about about about"
+    "register  register  register";
+}
+
+body {
+    background-color: #333;
+}
+
+#call-to-action {
+    background-color: rgba(43,56,73, .8);
+    grid-area: cta;
+    margin-top: 30px;
+}
+
+#wrapper:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(
+      rgba(43,56,73, 1), 
+      rgba(43,56,73, .8)
+    ), 
+    
+    url('https://scontent.fyyz1-1.fna.fbcdn.net/v/t1.0-9/1546300_769734769720847_91590970_n.jpg?oh=af8d77d7ac19e108e46fc42e20f0795c&oe=5A760B70');    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+#call-to-action h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+}
+
+#call-to-action .content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 25% 25% 20%;
+    grid-column-gap: 10px;
+    grid-template-areas:
+    ". heading heading ."
+    "description description description description"
+    ". sub sub ."
+    ". btn-about btn-register .";
+    color: #aaa;
+}
+
+#call-to-action #btn-about {
+    grid-area: btn-about;
+}
+
+#call-to-action #btn-register {
+    grid-area: btn-register;
+}
+
+#call-to-action h1 {
+    font-size: 3em;
+    color: #E6394A;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    grid-area: heading;
+}
+
+#call-to-action h2 {
+    color: #E6394A;
+    font-size: 2em;
+    margin-top: 0;
+    grid-area: sub;
+}
+
+#call-to-action p {
+    grid-area: description;
+}
+
+#about {
+    background-color: #aaaaaa;
+    grid-area: about;
+}
+
+#register {
+    background-color: #C6A440;
+    grid-area: register;
+}
+
+#footer {
+    background-color: #333;
+}
+
+/* Custom color */
+.button-black {
+  background-color: black;
+  border-color: black;
+}
+.button-red.button-clear,
+.button-red.button-outline {
+  background-color: transparent;
+  color: #E6394A;
+}
+.button-red.button-clear {
+  border-color: #E6394A;
+}
+
+.button-red {
+    background: #E6394A;
+    border-color: #E6394A;
+}
+
+@media (max-width:961px) {
+  #wrapper {
+    grid-template-columns: 8% 80% 8%;
+  }
+  #call-to-action .content {
+    grid-template-columns: 0% 50% 50% 0%;
+  }
+}
+
+
