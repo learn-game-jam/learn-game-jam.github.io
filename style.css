@@ -54,9 +54,10 @@ body {
     ". heading heading ."
     ". sub sub ."
     "description description description description"
-    " . loc loc ."
-    " . date date ."
-    ". btn-about btn-register .";
+    ". loc loc ."
+    ". date date ."
+    ". btn-about btn-register ."
+    "more-info more-info more-info more-info";
     color: #aaa;
     justify-content: center;
 }
@@ -69,6 +70,26 @@ body {
     grid-area: btn-register;
 }
 
+#call-to-action #design {
+    grid-area: design;
+}
+
+#call-to-action #develop {
+    grid-area: develop;
+}
+
+#call-to-action #master {
+    grid-area: master;
+}
+
+#call-to-action #mentor {
+    grid-area: mentor;
+}
+
+#call-to-action .more-info {
+    grid-area: more-info;
+}
+
 #call-to-action h1 {
   font-size: 5em;
   color: #E6394A;
@@ -76,8 +97,6 @@ body {
   text-transform: uppercase;
   grid-area: heading;
   font-family: 'Oswald', sans-serif;
-  font-
-
 }
 
 #call-to-action .content h2.where, #call-to-action .content h2.when {
@@ -95,6 +114,11 @@ body {
 
 #call-to-action .content .when {
   grid-area: date;
+}
+
+.info-button {
+  min-width: 65px;
+  display:inline-block;
 }
 
 #call-to-action h2.sub {
