@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
 
 * {
     -webkit-margin-before: 0em;
@@ -8,7 +8,7 @@
 }
 
 #wrapper {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 100px;
@@ -26,7 +26,7 @@ body {
 #call-to-action {
     background-color: rgba(43,56,73, .8);
     grid-area: cta;
-    margin-top: 30px;
+    padding: 10px;
 }
 
 #wrapper:before {
@@ -51,10 +51,6 @@ body {
     filter: blur(5px);
 }
 
-#call-to-action h1, h2 {
-    font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: 3px;
-}
 
 #call-to-action .content {
     text-align: center;
@@ -63,8 +59,10 @@ body {
     grid-column-gap: 10px;
     grid-template-areas:
     ". heading heading ."
-    "description description description description"
     ". sub sub ."
+    "description description description description"
+    " . loc loc ."
+    " . date date ."
     ". btn-about btn-register .";
     color: #aaa;
     justify-content: center;
@@ -79,17 +77,37 @@ body {
 }
 
 #call-to-action h1 {
-    font-size: 3em;
-    color: #E6394A;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    grid-area: heading;
+  font-size: 5em;
+  color: #E6394A;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  grid-area: heading;
+  font-family: 'Oswald', sans-serif;
+  font-
+
 }
 
-#call-to-action h2 {
+#call-to-action .content h2.where, #call-to-action .content h2.when {
+  color: #c6a640;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px
+}
+
+#call-to-action .content .where {
+  grid-area: loc;
+  margin-bottom: -5px;
+}
+
+#call-to-action .content .when {
+  grid-area: date;
+}
+
+#call-to-action h2.sub {
     color: #E6394A;
     font-size: 2em;
-    margin-top: 0;
+    margin-top: -10px;
     grid-area: sub;
 }
 
@@ -128,14 +146,17 @@ body {
 .button-red {
     background: #E6394A;
     border-color: #E6394A;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width:961px) {
   #wrapper {
-    grid-template-columns: 8% 80% 8%;
+    grid-template-columns: 0% 100% 0%;
+     grid-template-rows: 40px;
   }
   #call-to-action .content {
     grid-template-columns: 0% 50% 50% 0%;
+    grid-column-gap: 2px;
   }
 }
 
