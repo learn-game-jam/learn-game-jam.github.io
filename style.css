@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
 
-* {
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-}
-
 #wrapper {
     font-family: 'Montserrat', sans-serif;
     display: grid;
