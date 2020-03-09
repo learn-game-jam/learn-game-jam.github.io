@@ -1,0 +1,43 @@
+---
+---
+$color-red: #e23949;
+$color-yellow: #c4a640;
+@import "{{ site.theme }}";
+
+.page-header {
+    color: #fff;
+    text-align: center;
+    background-color:#159957;
+    background-image: linear-gradient(120deg,rgba(43,56,73, 1),#28739b);
+    padding-bottom: 5px;
+
+    h1 {
+        color: $color-red;
+    }
+
+    .btn {
+        font-weight: bold;
+        background-color: rgba(43,56,73, 0.4);
+        color: $color-yellow;
+    }
+
+    .btn:nth-child(even) {
+        color: $color-yellow;
+    }
+}
+
+#content h1 {
+    color: $color-yellow;
+}
+
+
+body {
+    background-color: rgba(43,56,73, 1);
+    color: #aaa;
+    li {
+        list-style-type: square;
+    }
+    a {
+        color: $color-red
+    }
+}
