@@ -383,7 +383,8 @@ a:hover { text-decoration: underline; }
 .site-header a.page-link { color: #c4a640; }
 
 .page-header { color: #fff; text-align: center; background-color: #159957; background-image: linear-gradient(120deg, #2b3849, #28739b); padding-bottom: 5px; }
-.page-header h1 { color: #e23949; }
+.page-header h1 { color: #e23949; font-size: 4em; margin-bottom: 0px; }
+.page-header h2 { margin-top: 0px; padding-top: 0px; }
 .page-header .btn { font-weight: bold; background-color: rgba(43, 56, 73, 0.4); color: #c4a640; }
 .page-header .btn:nth-child(even) { color: #c4a640; }
 
