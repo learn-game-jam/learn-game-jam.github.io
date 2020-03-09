@@ -1,4 +1,6 @@
-theme: jekyll-theme-cayman
+theme: 
 title: "LameJam 2020"
-description: "Learn, Game, Jam: Game jam and game design talks.\nWhen? Friday May 8th - Sunday May 10th\nWhere? Herzberg Laboratories, Carleton University"
+description: "Learn, Game, Jam: Game jam and game design talks."
 show_downloads: "false"
+twitter: 
+  username: "lame_jam"

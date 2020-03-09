@@ -2,7 +2,17 @@
 ---
 $color-red: #e23949;
 $color-yellow: #c4a640;
-@import "{{ site.theme }}";
+@import 'jekyll-theme-cayman-blog';
+
+.site-header {
+    border-bottom: rgba(43,56,73, 1);
+    a.site-title {
+        color: $color-red;
+    }
+    a.page-link {
+        color: $color-yellow;
+    }
+}
 
 .page-header {
     color: #fff;
@@ -26,8 +36,10 @@ $color-yellow: #c4a640;
     }
 }
 
-#content h1 {
-    color: $color-yellow;
+.main-content {
+    h1, h2, h3, h4 {
+        color: $color-yellow;
+    }
 }
 
 
@@ -38,6 +50,11 @@ body {
         list-style-type: square;
     }
     a {
-        color: $color-red
+        color: $color-red;
     }
+}
+
+.site-footer .my-svg-icon:hover {
+    fill: $color-red;
+    color: $color-red;
 }
